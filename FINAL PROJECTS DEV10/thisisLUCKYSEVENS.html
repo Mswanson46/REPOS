@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script type="text/javascript" src="hopefullythisworks.js"></script>
+</head>
+<body>
+  <div class="containter">
+    <h1>Lucky Sevens</h1>
+    <form name="thisisLuckySevens" onsubmit="return showResults()" onreset="resetform()" class="form-inline">
+      <div class="form-group">
+        <label for="startingBet">Starting Bet:</label>
+        <input type="number" class="form-control" id="beginningBet">
+      </div>
+      <button type="submit" id="playbutton" class="btn btn-default">Play</button>
+      <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+    <table id="betResults" class="table table-striped" style="display:none;">
+      <tbody>
+        <tr>
+          <td>Starting Bet</td>
+          <td><span id="startingBet"></span></td>
+        </tr>
+        <tr>
+          <td>Total Rolls Before Going Broke</td>
+          <td><span id="toteRollsb4zero"></span></td>
+        </tr>
+        <tr>
+          <td>Highest Amount Won</td>
+          <td><span id="highestAmountWon"></span>
+          </tr>
+          <td>Roll Count At Highest Amount Won</td>
+          <td><span id="rollcountHAW"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </body>
+  </html>
